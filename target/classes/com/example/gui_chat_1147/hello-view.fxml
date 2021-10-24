@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="300" prefWidth="250" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gui_chat_1147.HelloController">
+   <children>
+      <TextArea fx:id="textArea" editable="false" prefHeight="280.0" prefWidth="250.0" style="-fx-font-size: 20px; -fx-text-fill: blue; -fx-font-style: italic; -fx-border-color: red; -fx-border-radius: 20; -fx-region-background: red; -fx-background-color: black; text-area-background: green;" wrapText="true" />
+      <HBox prefHeight="20.0" prefWidth="250.0">
+         <children>
+            <TextField fx:id="textField" onAction="#handlerSend" prefWidth="180.0" promptText="Поле ввода" />
+            <Button mnemonicParsing="false" onAction="#handlerSend" style="-fx-background-color: #FF0000;" text="Отправить" textFill="#04540e" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
